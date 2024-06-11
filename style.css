@@ -1,0 +1,176 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background: var(--White, #F5F5F5);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+}
+
+.HeaderContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 30px 20px;
+    height: fit-content;
+    gap: 6px;
+    width: 95%;
+}
+
+.BodyContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: fit-content;
+    width: 95%;
+    gap: 6px;
+    border-radius: 5px;
+    background: #FFFFFF;
+    padding: 20px 20px 20px 20px;
+}
+
+.ElementContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: fit-content;
+    width: 95%;
+    gap: 20px;
+    border-radius: 5px;
+    background: transparent;
+    margin-top: 20px;
+}
+
+.Element {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: flex-start;
+    height: fit-content;
+    width: 100%;
+    gap: 20px;
+    border-radius: 5px;
+    background: #FFFFFF;
+    padding: 20px 20px 20px 20px;
+}
+
+.Text {
+    display: flex;
+    padding-top: 8px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 6px;
+    flex: 1 0 0;
+    align-self: stretch;
+    background-color: transparent;
+}
+
+.Color {
+    width: 58px;
+    height: 58px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    background: #000;
+}
+
+.Color2 {
+    width: 58px;
+    height: 58px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    background: #492F2F;
+}
+
+.Color3 {
+    width: 58px;
+    height: 58px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    background: #2F4946;
+}
+
+.Color4 {
+    width: 58px;
+    height: 58px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    background: #302F49;
+}
+
+h1 {
+    color: var(--Black, #131313);
+    font-feature-settings: 'calt' off;
+    font-family: Gilroy-Black;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 53.333% */
+    letter-spacing: -0.45px;
+    padding: 0px;
+    margin: 0px;
+}
+
+h2 {
+    color: var(--Grey, #848484);
+    font-feature-settings: 'calt' off;
+    font-family: Gilroy-Light;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 160% */
+    letter-spacing: -0.15px;
+    padding: 0px;
+    margin: 0px;
+}
+
+p {
+    color: var(--Black, #131313);
+    font-feature-settings: 'calt' off;
+    font-family: Poppins;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 200% */
+    letter-spacing: -0.12px;
+    display: flex;
+    width: 100%;
+    background-color: transparent;
+}
+
+.Titre {
+    color: var(--Black, #131313);
+    font-feature-settings: 'calt' off;
+    font-family: Poppins;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px; /* 200% */
+    letter-spacing: -0.12px;
+    background-color: transparent;
+    padding: 0px;
+    margin: 0px;
+}
+
+.SousTitre {
+    color: var(--Grey, #848484);
+    font-feature-settings: 'calt' off;
+    font-family: Poppins;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 0px; /* 200% */
+    letter-spacing: -0.12px;
+    background-color: transparent;
+    padding: 0px;
+    margin: 0px;
+}
