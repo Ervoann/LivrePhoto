@@ -1,3 +1,18 @@
+@font-face {
+    font-family: 'Gilroy-Black';
+    src: url('fonts/Gilroy-Black.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy-Light';
+    src: url('fonts/Gilroy-Light.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -136,7 +151,7 @@ h2 {
 p {
     color: var(--Black, #131313);
     font-feature-settings: 'calt' off;
-    font-family: Poppins;
+    font-family: Gilroy-Light;
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
@@ -150,7 +165,7 @@ p {
 .Titre {
     color: var(--Black, #131313);
     font-feature-settings: 'calt' off;
-    font-family: Poppins;
+    font-family: Guilroy-Black;
     font-size: 12px;
     font-style: normal;
     font-weight: 700;
@@ -164,7 +179,7 @@ p {
 .SousTitre {
     color: var(--Grey, #848484);
     font-feature-settings: 'calt' off;
-    font-family: Poppins;
+    font-family: Guilroy-Light;
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
