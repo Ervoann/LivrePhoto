@@ -18,7 +18,7 @@
     </div>
 
     <div class="ElementContainer">
-        <div class="Element">
+        <div class="Element First">
             <div class="Color"></div>
             <div class="Text">
                 <p class="Titre">Livret N°1</p>
@@ -26,7 +26,7 @@
             </div>
         </div>
 
-        <div class="Element">
+        <div class="Element Second">
             <div class="Color2"></div>
             <div class="Text">
                 <p class="Titre">Livret N°2</p>
@@ -34,7 +34,7 @@
             </div>
         </div>
 
-        <div class="Element">
+        <div class="Element Third">
             <div class="Color3"></div>
             <div class="Text">
                 <p class="Titre">Livret N°3</p>
@@ -42,7 +42,7 @@
             </div>
         </div>
 
-        <div class="Element">
+        <div class="Element Fourth">
             <div class="Color4"></div>
             <div class="Text">
                 <p class="Titre">Livret N°4</p>
@@ -50,5 +50,31 @@
             </div>
         </div>
     </div>
+
+    <div class="InfosFooter">
+        <p>Développé avec une 🦦 par Georges Ervoann</p>
+      </div>
 </body>
+<script>
+    let Home = document.querySelector('.HeaderContainer');
+    let First = document.querySelector('.First');
+    let Second = document.querySelector('.Second');
+    let Third = document.querySelector('.Third');
+    let Fourth = document.querySelector('.Fourth');
+    First.addEventListener('click', () => {
+        window.location.href = './Livret1.html';
+    });
+    Second.addEventListener('click', () => {
+        window.location.href = './Livret2.html';
+    });
+    Third.addEventListener('click', () => {
+        window.location.href = './Livret3.html';
+    });
+    Fourth.addEventListener('click', () => {
+        window.location.href = './Livret4.html';
+    });
+    Home.addEventListener('click', () => {
+        window.location.href = './index.html';
+    });
+</script>
 </html>

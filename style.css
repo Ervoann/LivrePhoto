@@ -28,15 +28,27 @@ body {
     justify-content: center;
 }
 
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+
 .HeaderContainer {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
-    margin: 30px 20px;
+    margin: 30px 0px 30px 0px;
     height: fit-content;
     gap: 6px;
     width: 95%;
+    cursor: pointer;
 }
 
 .BodyContainer {
@@ -50,6 +62,74 @@ body {
     border-radius: 5px;
     background: #FFFFFF;
     padding: 20px 20px 20px 20px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.Listen {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    width: 100%;
+    gap: 20px;
+    border-radius: 5px;
+    background: #000;
+    padding: 10px 20px 10px 20px;
+}
+
+.Listen2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    width: 100%;
+    gap: 20px;
+    border-radius: 5px;
+    background: #492F2F;
+    padding: 10px 20px 10px 20px;
+}
+
+.Listen3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    width: 100%;
+    gap: 20px;
+    border-radius: 5px;
+    background: #2F4946;
+    padding: 10px 20px 10px 20px;
+}
+
+.Listen4 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    width: 100%;
+    gap: 20px;
+    border-radius: 5px;
+    background: #302F49;
+    padding: 10px 20px 10px 20px;
+}
+
+.Listen p, .Listen2 p, .Listen3 p, .Listen4 p {
+    color: var(--White, #FFFFFF);
+    font-family: Gilroy-Black;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 200% */
+    letter-spacing: 0px;
+    width: fit-content;
+    background-color: transparent;
+    display: block;
+    margin: 0px;
+    padding: 0px;
 }
 
 .ElementContainer {
@@ -63,6 +143,7 @@ body {
     border-radius: 5px;
     background: transparent;
     margin-top: 20px;
+    animation: fadeIn 1s ease-in-out;
 }
 
 .Element {
@@ -76,6 +157,38 @@ body {
     border-radius: 5px;
     background: #FFFFFF;
     padding: 20px 20px 20px 20px;
+    transition: all 0.5s ease-in-out;
+}
+
+.Element:hover {
+    scale: 0.99;
+    opacity: 0.7;
+    transition: all 0.5s ease-in-out;
+}
+
+.ElementContainerNav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: fit-content;
+    width: 95%;
+    gap: 20px;
+    border-radius: 5px;
+    background: transparent;
+    margin-top: 20px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.InfosFooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    height: fit-content;
+    width: 95%;
+    background: transparent;
+    margin-top: 20px;
 }
 
 .Text {
@@ -88,6 +201,32 @@ body {
     flex: 1 0 0;
     align-self: stretch;
     background-color: transparent;
+}
+
+.BackButton {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    height: fit-content;
+    margin-bottom: 20px;
+    cursor: pointer;
+    gap: 10px;
+}
+
+.Back {
+    line-height: 0px;
+    margin: 0px;
+    padding: 0px;
+    color: var(--Black, #131313);
+    font-family: Gilroy-Black;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: -0.12px;
+    background-color: transparent;
+
 }
 
 .Color {
@@ -165,12 +304,10 @@ p {
 .Titre {
     color: var(--Black, #131313);
     font-feature-settings: 'calt' off;
-    font-family: Guilroy-Black;
-    font-size: 12px;
+    font-family: Gilroy-Black;
+    font-size: 15px;
     font-style: normal;
-    font-weight: 700;
     line-height: 24px; /* 200% */
-    letter-spacing: -0.12px;
     background-color: transparent;
     padding: 0px;
     margin: 0px;
@@ -179,7 +316,7 @@ p {
 .SousTitre {
     color: var(--Grey, #848484);
     font-feature-settings: 'calt' off;
-    font-family: Guilroy-Light;
+    font-family: Gilroy-Light;
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
