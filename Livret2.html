@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>LivrePhoto-Livret02</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
@@ -31,7 +31,7 @@
         <p>Livret N°2 : Échanges</p>
         <p>À travers XX photos recoupées en XX livrets, découvrez l’univers dans lequel j’ai pu travailler au cours de mon alternance au sein de l’entreprise Valyou.</p>
         <p>Pour vous repérer, veuillez utiliser les code couleurs présents sur l’ensemble des imprimés</p>
-        <div class="Listen2"><p>Écouter les images</p></div>
+        <!--<div class="Listen2" id="Listen2"><p>Écouter les images</p></div>-->
     </div>
 
     <div class="ElementContainer">
@@ -87,12 +87,58 @@
     <div class="InfosFooter">
         <p>Développé avec une 🦦 par Georges Ervoann</p>
       </div>
+
+      <div class="Player">
+        <audio id="track">
+            <source src="./src/records/echanges.mp3" type="audio/mpeg" />
+          </audio>
+          
+          <div id="player-container">
+          
+            <!-- Progress -->
+            <div id="timeline">
+              <div id="scrub"></div>
+              <div id="playhead"></div>
+            </div>
+          
+            <!-- Play button -->
+            <div id="play-pause" class="play" data-audio="./src/records/echanges.mp3">Play
+            </div>
+          
+            <!-- Artist Thumb-->
+            <div id="thumb"></div>
+          
+            <div class="item-inner">
+              <!-- Title-->
+              <div class="Titre">Livret N°02</div>
+              <div class="SousTitre">Échanges</div>
+          
+              <!-- Time -->
+              <div id="time-bar">
+                <div id="time-holder">
+                  <div id="is-left">
+                    <span id="current-time">
+                      00:00
+                    </span>
+                  </div>
+                  <div id="is-right">
+                    <span id="duration-time">
+                      <span class="duration-minutes" data-duration-minutes="true">0</span>:<span class="duration-minutes" data-duration-seconds="true">00</span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
 </body>
 <script>
     let Home = document.querySelector('.HeaderContainer');
     let Back = document.querySelector('.BackButton');
     let Before = document.querySelector('.Before');
     let After = document.querySelector('.After');
+
+
 
     Before.addEventListener('click', () => {
         window.location.href = './Livret1.html';
@@ -109,4 +155,5 @@
         window.location.href = './index.html';
     });
 </script>
+<script src="./Player.js"></script>
 </html>
