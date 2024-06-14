@@ -472,7 +472,7 @@ p {
   
   #timeline {
     width: 100%;
-    height: 5px;
+    height: 10px;
     background: #848484;
     float: left;
     z-index: 9;
@@ -480,7 +480,7 @@ p {
   }
   
   #scrub {
-    height: 5px;
+    height: 10px;
     background-color: #000;
     border: none;
     color: hsl(44, 100%, 44%);
@@ -488,8 +488,8 @@ p {
   }
   
   #playhead {
-    width: 5px;
-    height: 5px;
+    width: 10px;
+    height: 10px;
     background: #FFFFFF;
   }
   
